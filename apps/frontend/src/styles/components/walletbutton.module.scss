@@ -1,0 +1,33 @@
+.walletCard {
+  user-select: none;
+
+  .walletCardIcon {
+    border-radius: 14px;
+  }
+
+  .walletCardName {
+    flex: 1;
+  }
+}
+
+.accountButton {
+  will-change: auto;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  width: 100%;
+  z-index: 100;
+  will-change: auto;
+  position: absolute;
+  right: 0;
+}
+
+.dropdownItem {
+  gap: 10px;
+  display: flex;
+  padding: 10px 10px;
+  align-items: center;
+  justify-content: flex-start;
+}

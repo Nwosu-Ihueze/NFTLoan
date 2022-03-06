@@ -1,0 +1,21 @@
+.toastContainer {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  gap: 15px;
+  right: 30px;
+  bottom: 30px;
+  z-index: 10000;
+  will-change: auto;
+
+  .toast {
+    will-change: auto;
+  }
+
+  .closeIcon {
+    top: 50%;
+    right: 2px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+}

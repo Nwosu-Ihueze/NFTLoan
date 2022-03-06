@@ -1,0 +1,56 @@
+@mixin font-display {
+  font-family: Inter, SF Pro Display, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+
+  &:after,
+  &:before {
+    box-sizing: inherit;
+  }
+}
+
+:root {
+  scroll-behavior: smooth;
+  @include font-display;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#__next {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  transition: background-color 250ms ease;
+  @include font-display;
+}
+
+.light {
+  #__next {
+    background-color: #ffffffff;
+  }
+
+  ::selection {
+    background-color: #98d5fdff;
+  }
+}
+
+.dark {
+  #__next {
+    background-color: #030106ff;
+  }
+
+  ::selection {
+    background-color: #461491ff;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
