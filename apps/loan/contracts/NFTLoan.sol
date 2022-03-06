@@ -3,7 +3,7 @@ pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
-import "utils/ABDKMath64x64.sol";
+import "../utils/ABDKMath64x64.sol";
 
 /**
  * @title NFTLoan: NFT-collateralized lending
