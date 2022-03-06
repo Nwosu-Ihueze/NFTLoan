@@ -1,0 +1,87 @@
+{
+  "extends": "tsconfig/tsconfig.next.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@assets": [
+        "public/assets"
+      ],
+      "@assets/*": [
+        "public/assets/*"
+      ],
+      "@components": [
+        "src/components"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@enums": [
+        "src/enums"
+      ],
+      "@enums/*": [
+        "src/enums/*"
+      ],
+      "@hocs": [
+        "src/hocs"
+      ],
+      "@hocs/*": [
+        "src/hocs/*"
+      ],
+      "@hooks": [
+        "src/hooks"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@layouts": [
+        "src/layouts"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@pages": [
+        "src/pages"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@stores": [
+        "src/stores"
+      ],
+      "@stores/*": [
+        "src/stores/*"
+      ],
+      "@styles": [
+        "src/styles"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@types": [
+        "src/types"
+      ],
+      "@types/*": [
+        "src/types/*"
+      ],
+      "@utils": [
+        "src/utils"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.js",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.d.ts",
+    "next-env.d.ts"
+  ],
+  "exclude": [
+    ".next",
+    ".turbo",
+    "public",
+    "node_modules"
+  ]
+}
