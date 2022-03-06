@@ -10,4 +10,3 @@ Repaying your loan with interest.
 Canceling the loan.
 NFT seized in the case of the borrower defaulting.
 Withdrawing money as a lender. 
-

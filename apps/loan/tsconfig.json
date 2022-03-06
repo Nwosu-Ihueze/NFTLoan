@@ -1,0 +1,15 @@
+{
+  "extends": "tsconfig/tsconfig.hardhat.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist"
+  },
+  "include": [
+    "./test",
+    "./scripts",
+    "./typechain"
+  ],
+  "files": [
+    "./hardhat.config.ts"
+  ]
+}

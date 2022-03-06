@@ -1,24 +1,31 @@
 {
   "name": "nft-loan",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "turbo run dev --parallel",
+    "dev:loan": "turbo run dev --scope=loan --no-deps",
+    "dev:frontend": "turbo run dev --scope=frontend --no-deps",
+    "start": "turbo run start --parallel",
+    "start:loan": "turbo run start --scope=loan --no-deps",
+    "start:frontend": "turbo run start --scope=frontend --no-deps",
+    "build": "turbo run build",
+    "build:loan": "turbo run compile --scope=loan --no-deps",
+    "build:frontend": "turbo run build --scope=frontend --no-deps",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.0.5",
-    "@nomiclabs/hardhat-waffle": "^2.0.3",
-    "chai": "^4.3.6",
-    "ethereum-waffle": "^3.4.0",
-    "ethers": "^5.5.4",
-    "hardhat": "^2.9.1"
+    "prettier": "^2.5.1",
+    "turbo": "^1.1.5"
   },
-  "dependencies": {
-    "@openzeppelin/contracts": "^4.5.0",
-    "dotenv": "^16.0.0"
-  }
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@6.32.2"
 }
