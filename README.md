@@ -16,6 +16,8 @@ The functionalities of this project are as follows:
 - Withdrawing money as a lender.
 
 ## Tools
+- [Pnpm](https://pnpm.io/)
+- [Turborepo](https://turborepo.org/)
 - [Solidity](https://soliditylang.org/)
 - [Hardhat](https://hardhat.org/)
 - [Alchemy](https://www.alchemy.com/)
@@ -32,16 +34,28 @@ cd NFTLoan
 ```
 
 ### Install Dependencies
+Using the **[pnpm](https://pnpm.io)** package manager. [How to install pnpm?](https://pnpm.io/installation)
 ```
-npm install
+pnpm install
 ```
 
 ### Compile The Contract
 ```
-npx hardhat compile
+pnpm build:loan
 ```
 
 ### Frontend Instructions
+
+```bash
+# start dev server, default on localhost:3000
+$ pnpm dev:frontend
+
+# build production
+$ pnpm build:frontend
+
+# run production server
+$ pnpm start:frontend
+```
 
 ## Collaborators
 [TianenPang](https://github.com/TianenPang)
@@ -54,10 +68,5 @@ Rosemary - @twitter/adaihueze
 
 TianenPang - [TianenPang](https://github.com/TianenPang)
 
-
-
-
-
 ## Credits
 Guide implementation of this project is from [Anish-Agnihotri](https://github.com/Anish-Agnihotri) except the bidding and capital implementations.
-
