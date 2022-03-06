@@ -15,14 +15,14 @@ task('accounts', 'Prints the list of accounts', async (_, hre) => {
 
 const ALCHEMY_API_KEY_URL = process.env.ALCHEMY_API_KEY_URL;
 
-const RINKEBY_PRIVATE_KEY = process.env.RINKEBY_PRIVATE_KEY;
+const POLYGON_PRIVATE_KEY = process.env.POLYGON_PRIVATE_KEY;
 
 const config: HardhatUserConfig = {
   solidity: '0.8.4',
   networks: {
     polygon_mumbai: {
       url: ALCHEMY_API_KEY_URL,
-      accounts: [RINKEBY_PRIVATE_KEY]
+      accounts: [POLYGON_PRIVATE_KEY]
     }
   }
 };
