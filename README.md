@@ -59,6 +59,6 @@ TianenPang - [TianenPang](https://github.com/TianenPang)
 
 
 ## Credits
-Guide implementation of this project is from [Anish-Agnihotri](https://github.com/Anish-Agnihotri) except the bidding and wrapped implementations.
+Guide implementation of this project is from [Anish-Agnihotri](https://github.com/Anish-Agnihotri) except the bidding and capital implementations.
 
 
