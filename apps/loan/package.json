@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "hardhat node",
     "test": "hardhat test",
-    "build": "hardhat compile",
+    "compile": "hardhat compile",
+    "build": "hardhat clean & hardhat compile",
     "help": "hardhat help",
     "clean": "hardhat clean",
     "accounts": "hardhat accounts"
