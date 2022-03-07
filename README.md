@@ -2,7 +2,7 @@
 
 ## Project Description
 
-![alt text](https://github.com/Nwosu-Ihueze/NFTLoan/blob/main/Screenshot%202022-03-06%20214101.png?raw=true)
+![alt text](https://github.com/Nwosu-Ihueze/NFTLoan/blob/main/NFTLoan.png?raw=true)
 
 NFTLoan is an NFT based collateralized loan protocol that is wrapped in ETH for effective pricing thereby increasing their ability to be used as collateral. This protocol is mainly to achieve:
 
